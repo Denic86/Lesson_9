@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: #000;
+}
+main {
+	margin-top: 60px;
+}
+.header {
+	background-color: rgb(0, 80, 24);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: 5px;
+}
+.example{
+	background-color: #fff;
+}
+.header__container{ 
+	background-color: rgb(88, 0, 0);
+	max-width: 80%;
+	margin: 0 auto;
+}
+.header__nav {
+	background-color: rgb(68, 0, 82);
+}
+.header__link {
+	background-color: rgb(4, 0, 73);
+	font-size: 0px;
+}
+.header__link a:hover {
+	text-decoration: underline rgb(219, 100, 255);
+	color: skyblue;
+}
+.header__link > li{
+	display: inline-block;
+	padding: 5px;
+	margin-right: 10px;
+	font-size: 35px;
+	background-color: rgb(224, 0, 0);
+	line-height: 110%;
+	position: relative;
+}
+.header__link > li:last-child {
+	margin-right: 0px;
+}
+.header__list {
+	background-color: rgb(83, 85, 0);
+	color: black;
+}
+.header__link > li:hover .header__sub-link {
+	display: block;
+}
+.header__link > li:last-child .header__sub-link{
+	left: auto;
+	right: 0;
+}
+.header__sub-link > li {
+	position: relative;
+}
+.header__sub-link {
+	background-color: rgb(85, 0, 134);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 100;
+	width: 150px;
+}
+.header__sub-list {
+	background-color: rgb(0, 92, 134);;
+	color: black;
+	font-size: 35px;
+}
+.header__sub-link > li:hover .header__double-link {
+	display: block;
+}
+.header__double-link {
+	background-color: yellowgreen;
+	display: none;
+	position: absolute;
+	width: 150px;
+}
+.header__sub-link > li:nth-child(even) ul{
+	left: 100%;
+	top: 0;
+}
+.header__sub-link > li:nth-child(odd) ul{
+	right: 100%;
+	top: 0;
+}
+.header__double-list {
+	color: black;
+	background-color: yellow;
+}
+.header__link > li:last-child .header__sub-link > li .header__double-link {
+	right: 100%;
+	left: auto;
+	top: 0;
+}
+
+.block {
+	
+	max-width: 700px;
+	font-size: 35px;
+	padding: 5px;
+}
+.block_1 {
+	margin-top: 20px;
+	background-color: rgb(3, 133, 10);
+	position: relative;
+	z-index: 3;
+}
+.block_2 {
+	background-color: rgb(182, 0, 0);
+	position: relative;
+	top: -20px;
+	z-index: 1;
+}
+.block_3 {
+	background-color: rgb(53, 0, 200);
+	position: relative;
+	top: -40px;
+	z-index: 1;
+}
+.semicircle {
+	background-color: orange;
+	font-size: 35px;
+	height: 50px;
+	width: 100px;
+	border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+	line-height: 150%;
+	text-align: center;
+}
+
+.car {
+	position: relative;
+	width: 1500px;
+	height: 500px;
+	/* background-color: rgb(0, 134, 243); */
+	margin: 15px;
+}
+.car__trank {
+	height: 80%;
+	width: 22%;
+	background-color: rgb(116, 116, 116);
+	position: absolute;
+	top: 0%;
+	left: 3%;
+	border-radius: 5% 0% 0% 15%;
+}
+.car__cabin {
+	height: 80%;
+	width: 45%;
+	background-color: rgb(116, 116, 116);
+	position: absolute;
+	left: 25%;
+	top: 0;
+	border-radius: 0% 5% 0% 0%;
+}
+.car__bonnet {
+	height: 40%;
+	width: 20%;
+	background-color: rgb(116, 116, 116);
+	position: absolute;
+	left: 70%;
+	top: 40%;
+	border-radius: 0% 15% 10% 0%;
+}
+.car__window {
+
+}
+.trank__window {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 40%;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10%;
+}
+.cabin__window {
+
+}
+.door__window {
+	position: absolute;
+	top: 6%;
+	left: 10%;
+	width: 80%;
+	height: 45%;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10%;
+}
+.door-2__window {
+	position: absolute;
+	top: 6%;
+	left: 10%;
+	width: 80%;
+	height: 45%;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10%;
+}
+.car__arch {
+	width: 14%;
+	height: 21%;
+	border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+	background-color: rgb(236, 236, 236);
+	z-index: 2;
+}
+.trank__arch {
+	position: absolute;
+	top: 59%;
+	left: 8%;
+}
+
+.bonnet__arch {
+	position: absolute;
+	top: 59%;
+	right: 15%;
+}
+
+.cabin__door {
+	background-color: rgb(71, 71, 71);
+	width: 40%;
+	height: 90%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	border-radius: 5% 3% 3% 5%;
+}
+
+.cabin__door-2 {
+	background-color: rgb(71, 71, 71);
+	width: 40%;
+	height: 90%;
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	border-radius: 5% 3% 3% 5%;
+}
+
+.car__wheel {
+	position: absolute;
+	height: 150%;
+	width: 75%;
+	background: url('../img/wheels.jpg') -34px -3px /143% no-repeat;
+	border-radius: 50%;
+	top: 30%;
+	left: 14%;
+	transition: all 10s ease 0s;
+}
+.car:hover .car__wheel{
+	transform: rotate(3000deg)
+}
